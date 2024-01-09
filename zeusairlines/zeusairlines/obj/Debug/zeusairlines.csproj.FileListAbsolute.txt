@@ -1,0 +1,15 @@
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\bin\Debug\zeusairlines.exe.config
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\bin\Debug\zeusairlines.exe
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\bin\Debug\zeusairlines.pdb
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\obj\Debug\zeusairlines.csprojAssemblyReference.cache
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\obj\Debug\zeusairlines.Properties.Resources.resources
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\obj\Debug\zeusairlines.csproj.GenerateResource.cache
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\obj\Debug\zeusairlines.csproj.CoreCompileInputs.cache
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\obj\Debug\zeusairlines.exe
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\obj\Debug\zeusairlines.pdb
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\obj\Debug\zeusairlines.giris.resources
+C:\Users\ciftc\source\repos\zeusairlines\zeusairlines\bin\Debug\zeusairlines.mdb
+C:\Users\ciftc\source\repos\ZeusAirlines\zeusairlines\obj\Debug\zeusairlines.biletbul.resources
+C:\Users\ciftc\source\repos\ZeusAirlines\zeusairlines\obj\Debug\zeusairlines.biletsec.resources
+C:\Users\ciftc\source\repos\ZeusAirlines\zeusairlines\obj\Debug\zeusairlines.kayit.resources
+C:\Users\ciftc\source\repos\ZeusAirlines\zeusairlines\obj\Debug\zeusairlines.koltuksec.resources

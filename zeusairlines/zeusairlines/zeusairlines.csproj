@@ -52,6 +52,12 @@
     <Compile Include="biletbul.Designer.cs">
       <DependentUpon>biletbul.cs</DependentUpon>
     </Compile>
+    <Compile Include="BiletSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletSatis.Designer.cs">
+      <DependentUpon>BiletSatis.cs</DependentUpon>
+    </Compile>
     <Compile Include="biletsec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UcusDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="zeusairlinesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="biletbul.resx">
       <DependentUpon>biletbul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletSatis.resx">
+      <DependentUpon>BiletSatis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="biletsec.resx">
       <DependentUpon>biletsec.cs</DependentUpon>
@@ -118,6 +132,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UcusDataSet.xsc">
+      <DependentUpon>UcusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UcusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UcusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UcusDataSet.xss">
+      <DependentUpon>UcusDataSet.xsd</DependentUpon>
+    </None>
     <None Include="zeusairlinesDataSet.xsc">
       <DependentUpon>zeusairlinesDataSet.xsd</DependentUpon>
     </None>

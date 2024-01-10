@@ -10,7 +10,7 @@ namespace zeusairlines
     class DatabaseConnection
     {
         public OleDbConnection Connection () {
-            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\ciftc\\OneDrive\\Masaüstü\\ZEUS AIRLINES\\zeusairlines.mdb");
+            OleDbConnection conn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\zeusairlines.mdb");
          conn.Open();
          return conn;
 

@@ -30,7 +30,7 @@ namespace zeusairlines
 
             cmd.ExecuteNonQuery();
             conn.Connection().Close();
-
+            MessageBox.Show("Kayıt Başarıyla Olundu.");
 
 
 

@@ -24,7 +24,7 @@ namespace zeusairlines
             cmd.Parameters.AddWithValue("@TcNo",maskedTextBox1.Text);
             cmd.Parameters.AddWithValue("@Sifre", maskedTextBox2.Text);
             cmd.Parameters.AddWithValue("@TelNo", maskedTextBox3.Text);
-            cmd.Parameters.AddWithValue("@IsimSoyisim", textBox1.Text);
+            cmd.Parameters.AddWithValue("@IsimSoyisim", textBox2.Text);
             cmd.Parameters.AddWithValue("@Mail", textBox1.Text);
             cmd.Parameters.AddWithValue("@DogumTarihi", dateTimePicker1.Value);
 
@@ -52,6 +52,11 @@ namespace zeusairlines
         }
 
         private void kayit_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -97,28 +97,28 @@ namespace zeusairlines
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button12.Enabled = false;
+                        button20.Enabled = false;
                     }
                     break;
                 case 11:
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button13.Enabled = false;
+                        button19.Enabled = false;
                     }
                     break;
                 case 12:
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button14.Enabled = false;
+                        button18.Enabled = false;
                     }
                     break;
                 case 13:
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button15.Enabled = false;
+                        button17.Enabled = false;
                     }
                     break;
                 case 14:
@@ -132,28 +132,28 @@ namespace zeusairlines
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button17.Enabled = false;
+                        button15.Enabled = false;
                     }
                     break;
                 case 16:
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button18.Enabled = false;
+                        button14.Enabled = false;
                     }
                     break;
                 case 17:
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button19.Enabled = false;
+                        button13.Enabled = false;
                     }
                     break;
                 case 18:
                     if (koltukSecildiMi)
                     {
                         SetSeat();
-                        button20.Enabled = false;
+                        button12.Enabled = false;
                     }
                     break;
 
@@ -280,6 +280,9 @@ namespace zeusairlines
         private void button1_Click(object sender, EventArgs e)
         {
             SelectSeat();
+            Kasa kasa = new Kasa();
+            kasa.Show();
+            this.Hide();
         }
     }
 }

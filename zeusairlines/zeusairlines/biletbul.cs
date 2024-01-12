@@ -13,7 +13,7 @@ namespace zeusairlines
     public partial class biletbul : Form
     {
         DatabaseConnection db = new DatabaseConnection();
-        
+        public static string nereden;
         public biletbul()
         {
             InitializeComponent();
@@ -21,17 +21,8 @@ namespace zeusairlines
 
         private void button1_Click(object sender, EventArgs e)
         {
-            biletsec biletsec = new biletsec();
-            OleDbCommand cmd = new OleDbCommand("Select * from UcusBilgiler where Nereden=?",db.Connection());
-            cmd.Parameters.AddWithValue("?",comboBox1.Text);
-            OleDbDataAdapter adapter = new OleDbDataAdapter(cmd);
-            UcusDataSet dataSet = new UcusDataSet();
-            adapter.Fill(dataSet,"UcusBilgiler");
-            biletsec.dataGridView1.DataSource = dataSet.Tables["UcusBilgiler"];
 
-            cmd.ExecuteNonQuery();
-            db.Connection().Close();
-
+            nereden = comboBox1.Text;
             biletsec bilet = new biletsec();
             this.Hide();
             bilet.Show();
@@ -54,6 +45,8 @@ namespace zeusairlines
         {
             if (radioButton1.Checked==true)
             {
+                comboBox1.Enabled = true;
+                comboBox2.Enabled = true;
                 comboBox3.Enabled = false;
                 comboBox4.Enabled = false;
             }

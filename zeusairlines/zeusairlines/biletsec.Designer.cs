@@ -33,23 +33,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.neredenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nereyeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kalkışSaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.varışSaatiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fiyatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bosKoltukSayisiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ucusBilgilerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.zeusairlinesDataSet = new zeusairlines.zeusairlinesDataSet();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.ucusBilgilerTableAdapter = new zeusairlines.zeusairlinesDataSetTableAdapters.UcusBilgilerTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucusBilgilerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zeusairlinesDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -78,7 +68,6 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -88,15 +77,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.neredenDataGridViewTextBoxColumn,
-            this.nereyeDataGridViewTextBoxColumn,
-            this.tarihDataGridViewTextBoxColumn,
-            this.kalkışSaatiDataGridViewTextBoxColumn,
-            this.varışSaatiDataGridViewTextBoxColumn,
-            this.fiyatDataGridViewTextBoxColumn,
-            this.bosKoltukSayisiDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.ucusBilgilerBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(166, 334);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
@@ -106,64 +86,9 @@
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // neredenDataGridViewTextBoxColumn
-            // 
-            this.neredenDataGridViewTextBoxColumn.DataPropertyName = "Nereden";
-            this.neredenDataGridViewTextBoxColumn.HeaderText = "Nereden";
-            this.neredenDataGridViewTextBoxColumn.Name = "neredenDataGridViewTextBoxColumn";
-            this.neredenDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nereyeDataGridViewTextBoxColumn
-            // 
-            this.nereyeDataGridViewTextBoxColumn.DataPropertyName = "Nereye";
-            this.nereyeDataGridViewTextBoxColumn.HeaderText = "Nereye";
-            this.nereyeDataGridViewTextBoxColumn.Name = "nereyeDataGridViewTextBoxColumn";
-            this.nereyeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tarihDataGridViewTextBoxColumn
-            // 
-            this.tarihDataGridViewTextBoxColumn.DataPropertyName = "Tarih";
-            this.tarihDataGridViewTextBoxColumn.HeaderText = "Tarih";
-            this.tarihDataGridViewTextBoxColumn.Name = "tarihDataGridViewTextBoxColumn";
-            this.tarihDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // kalkışSaatiDataGridViewTextBoxColumn
-            // 
-            this.kalkışSaatiDataGridViewTextBoxColumn.DataPropertyName = "Kalkış Saati";
-            this.kalkışSaatiDataGridViewTextBoxColumn.HeaderText = "Kalkış Saati";
-            this.kalkışSaatiDataGridViewTextBoxColumn.Name = "kalkışSaatiDataGridViewTextBoxColumn";
-            this.kalkışSaatiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // varışSaatiDataGridViewTextBoxColumn
-            // 
-            this.varışSaatiDataGridViewTextBoxColumn.DataPropertyName = "Varış Saati";
-            this.varışSaatiDataGridViewTextBoxColumn.HeaderText = "Varış Saati";
-            this.varışSaatiDataGridViewTextBoxColumn.Name = "varışSaatiDataGridViewTextBoxColumn";
-            this.varışSaatiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fiyatDataGridViewTextBoxColumn
-            // 
-            this.fiyatDataGridViewTextBoxColumn.DataPropertyName = "Fiyat";
-            this.fiyatDataGridViewTextBoxColumn.HeaderText = "Fiyat";
-            this.fiyatDataGridViewTextBoxColumn.Name = "fiyatDataGridViewTextBoxColumn";
-            this.fiyatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bosKoltukSayisiDataGridViewTextBoxColumn
-            // 
-            this.bosKoltukSayisiDataGridViewTextBoxColumn.DataPropertyName = "BosKoltukSayisi";
-            this.bosKoltukSayisiDataGridViewTextBoxColumn.HeaderText = "BosKoltukSayisi";
-            this.bosKoltukSayisiDataGridViewTextBoxColumn.Name = "bosKoltukSayisiDataGridViewTextBoxColumn";
-            this.bosKoltukSayisiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // ucusBilgilerBindingSource
             // 
             this.ucusBilgilerBindingSource.DataMember = "UcusBilgiler";
-            this.ucusBilgilerBindingSource.DataSource = this.zeusairlinesDataSet;
-            // 
-            // zeusairlinesDataSet
-            // 
-            this.zeusairlinesDataSet.DataSetName = "zeusairlinesDataSet";
-            this.zeusairlinesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox1
             // 
@@ -197,10 +122,6 @@
             this.textBox4.Size = new System.Drawing.Size(250, 26);
             this.textBox4.TabIndex = 9;
             // 
-            // ucusBilgilerTableAdapter
-            // 
-            this.ucusBilgilerTableAdapter.ClearBeforeFill = true;
-            // 
             // biletsec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -218,11 +139,11 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "biletsec";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "biletsec";
             this.Load += new System.EventHandler(this.biletsec_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucusBilgilerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zeusairlinesDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,9 +157,9 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         public System.Windows.Forms.DataGridView dataGridView1;
-        private zeusairlinesDataSet zeusairlinesDataSet;
+
         private System.Windows.Forms.BindingSource ucusBilgilerBindingSource;
-        private zeusairlinesDataSetTableAdapters.UcusBilgilerTableAdapter ucusBilgilerTableAdapter;
+    
         private System.Windows.Forms.DataGridViewTextBoxColumn neredenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nereyeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tarihDataGridViewTextBoxColumn;

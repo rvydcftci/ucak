@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.OleDb;
 namespace zeusairlines
 {
+
     public partial class biletsec : Form
     {
+        public static string nereden;
+        public static string nereye;
+        public static string tarih;
+        public static string saat;
+        public static string ucret;
+
         public biletsec()
         {
             InitializeComponent();
@@ -19,19 +26,29 @@ namespace zeusairlines
 
         private void button1_Click(object sender, EventArgs e)
         {
+            nereden= dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            nereye= dataGridView1.CurrentRow.Cells[1].Value.ToString(); 
+            tarih= dataGridView1.CurrentRow.Cells[2].Value.ToString(); 
+            saat= dataGridView1.CurrentRow.Cells[3].Value.ToString(); 
+            ucret= dataGridView1.CurrentRow.Cells[5].Value.ToString();
             koltuksec gr = new koltuksec();
             gr.Show();
             this.Hide();
         }
-
+        DatabaseConnection db = new DatabaseConnection();
         private void biletsec_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'zeusairlinesDataSet.UcusBilgiler' table. You can move, or remove it, as needed.
-            this.ucusBilgilerTableAdapter.Fill(this.zeusairlinesDataSet.UcusBilgiler);
-            // TODO: This line of code loads data into the 'zeusairlinesDataSet1.UcusBilgiler' table. You can move, or remove it, as needed.
-            // TODO: This line of code loads data into the 'ucusDataSet.UcusBilgiler' table. You can move, or remove it, as needed.
             
-            
+            OleDbCommand cmd = new OleDbCommand("Select * from UcusBilgiler where Nereden=?", db.Connection());
+            cmd.Parameters.AddWithValue("?",biletbul.nereden);
+            OleDbDataAdapter adapter = new OleDbDataAdapter(cmd);
+            DataTable tablo = new DataTable();
+            adapter.Fill(tablo);
+            dataGridView1.DataSource = tablo;
+
+
+            db.Connection().Close();
+
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -46,17 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkle.Designer.cs">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSil.Designer.cs">
+      <DependentUpon>AdminSil.cs</DependentUpon>
+    </Compile>
     <Compile Include="biletbul.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="biletbul.Designer.cs">
       <DependentUpon>biletbul.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BiletSatis.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BiletSatis.Designer.cs">
-      <DependentUpon>BiletSatis.cs</DependentUpon>
     </Compile>
     <Compile Include="biletsec.cs">
       <SubType>Form</SubType>
@@ -65,6 +83,18 @@
       <DependentUpon>biletsec.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="GenelGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenelGiris.Designer.cs">
+      <DependentUpon>GenelGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="kayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,26 +113,55 @@
     <Compile Include="koltuksec.Designer.cs">
       <DependentUpon>koltuksec.cs</DependentUpon>
     </Compile>
+    <Compile Include="KullaniciSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciSil.Designer.cs">
+      <DependentUpon>KullaniciSil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UcusDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UcusDataSet.xsd</DependentUpon>
+    <Compile Include="SatilanBiletSil.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="zeusairlinesDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>zeusairlinesDataSet.xsd</DependentUpon>
+    <Compile Include="SatilanBiletSil.Designer.cs">
+      <DependentUpon>SatilanBiletSil.cs</DependentUpon>
     </Compile>
+    <Compile Include="UcusEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcusEkle.Designer.cs">
+      <DependentUpon>UcusEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcusSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcusSil.Designer.cs">
+      <DependentUpon>UcusSil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminEkle.resx">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSil.resx">
+      <DependentUpon>AdminSil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="biletbul.resx">
       <DependentUpon>biletbul.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BiletSatis.resx">
-      <DependentUpon>BiletSatis.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="biletsec.resx">
       <DependentUpon>biletsec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenelGiris.resx">
+      <DependentUpon>GenelGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="kayit.resx">
       <DependentUpon>kayit.cs</DependentUpon>
@@ -112,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="koltuksec.resx">
       <DependentUpon>koltuksec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSil.resx">
+      <DependentUpon>KullaniciSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +185,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SatilanBiletSil.resx">
+      <DependentUpon>SatilanBiletSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcusEkle.resx">
+      <DependentUpon>UcusEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcusSil.resx">
+      <DependentUpon>UcusSil.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,28 +203,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="UcusDataSet.xsc">
-      <DependentUpon>UcusDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="UcusDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>UcusDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UcusDataSet.xss">
-      <DependentUpon>UcusDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="zeusairlinesDataSet.xsc">
-      <DependentUpon>zeusairlinesDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="zeusairlinesDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>zeusairlinesDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="zeusairlinesDataSet.xss">
-      <DependentUpon>zeusairlinesDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -166,9 +215,12 @@
     <None Include="Resources\biletbul.png" />
     <None Include="Resources\biletsec.png" />
     <None Include="Resources\koltuksec.png" />
-    <Content Include="zeusairlines.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bos.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

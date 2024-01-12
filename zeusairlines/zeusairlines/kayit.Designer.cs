@@ -138,6 +138,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "kayit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "kayit";
             this.Load += new System.EventHandler(this.kayit_Load);
             this.ResumeLayout(false);

@@ -22,8 +22,8 @@ namespace zeusairlines
             OleDbCommand cmd = new OleDbCommand("insert into UcusBilgiler (Nereden,Nereye,Tarih,KalkisSaati,VarisSaati,Fiyat,UcusNo) values (@Nereden,@Nereye,@Tarih,@KalkisSaati,@VarisSaati,@Fiyat,@UcusNo)", db.Connection());
             cmd.Parameters.AddWithValue("@Nereden", maskedTextBox1.Text);
             cmd.Parameters.AddWithValue("@Nereye", maskedTextBox2.Text);
-            cmd.Parameters.AddWithValue("@Tarih", maskedTextBox3.Text);
-            cmd.Parameters.AddWithValue("@KalkisSaati", maskedTextBox4.Text);
+            cmd.Parameters.AddWithValue("@Tarih", maskedTextBox4.Text);
+            cmd.Parameters.AddWithValue("@KalkisSaati", maskedTextBox3.Text);
             cmd.Parameters.AddWithValue("@VarisSaati", maskedTextBox5.Text);
             cmd.Parameters.AddWithValue("@Fiyat", maskedTextBox6.Text);
             cmd.Parameters.AddWithValue("@UcusNo", maskedTextBox7.Text);

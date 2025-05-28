@@ -1,6 +1,6 @@
 
 ✈️ZEUS AIRLINES – Flight Ticket Automation System✈️
-Zeus Airlines is a desktop-based flight ticket automation system developed in C#. It allows users to search for flights, make reservations, and purchase tickets easily through a user-friendly interface.
+   Zeus Airlines is a desktop-based flight ticket automation system developed in C#. It allows users to search for flights, make reservations, and purchase tickets easily through a user-friendly interface.
 --------------
 🧩Project Overview
 The system aims to simplify flight booking processes by offering quick access to flight data, easy comparison, and seamless reservation and payment operations. It is suitable for individual users and airline office staff.
